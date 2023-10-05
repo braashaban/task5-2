@@ -17,6 +17,9 @@ li {
     --second-color: #8a8a8a;
 }
 
+body{
+    overflow-x: hidden;
+}
 .top {
     background-color: #000000;
     color: white;
@@ -39,25 +42,24 @@ li {
     color: var(--main-color);
 }
 
-/*  .slider .carousel-control-prev {
-    padding: 30px;
-}
 
-  .slider .carousel-control-next-icon,
-  .slider .carousel-control-prev-icon {
-    width: 3rem;
-    height: 3rem;
-    background-color: black;
-    border-radius: 50%;
-    padding: 25px;
+
+.carousel{
+    width: 100vw;
 }
-.slider .carousel-control-next-icon:hover,
-.slider .carousel-control-prev-icon:hover {
-    background-color: var(--main-color);
-} */
 .carousel-caption{
-    top: 40px !important;
-    left: 20%;
+    top: 100px !important;
+    left: 15% !important;
+    width: 100%;
+}
+.carousel-item .carousel-2{
+    top: 100px !important;
+    left: -18% !important;
+    width: 100% !important
+}
+.carousel-item .imgs{
+width: 100%;
+object-fit: cover;
 }
 .carousel-item .btn-slider{
 background-color: #000000;
@@ -73,11 +75,27 @@ width: 190px;
     color:#fff !important;
     
     }
+
+   .carousel-control-next-icon,
+ .carousel-control-prev-icon {
+      width: 3rem;
+      height: 3rem;
+      background-color: #000000 !important;
+      color: #fff;
+      border-radius: 50%;
+      padding: 20px;
+  }
+  
+  .carousel-control-next-icon:hover,
+  .carousel-control-prev-icon:hover{
+    background-color:#eb0028 !important ;
+  }
 .carousel-item h5{
-    font-size: 6.25rem !important;
+    font-size: 5.25rem !important;
+
 }
 .carousel-item p{
-    font-size: 2.25rem !important;
+    font-size: 2.1rem !important;
 }
 .under-slider {
     background-color: #8a8a8a38;
@@ -92,17 +110,13 @@ width: 190px;
 }
 
 .under-slider .content p {
-
     font-weight: 700;
 }
-
-
 
 .under-slider .content img {
     width: 60px;
     height: 60px;
 }
-
 .performance .card {
     border: none;
     transition: 0.8s all ease-in-out;
@@ -124,6 +138,10 @@ width: 190px;
     transition: 0.8s all;
 }
 
+.power .imgs{
+    max-width: 100%;
+
+}
 
 
 .features .feat1{
@@ -166,6 +184,10 @@ width: 190px;
     border-bottom: 1px solid #fff;
     padding: 10px;
  
+}
+
+.accordion .imgss img{
+    max-width: 100% !important;
 }
     
 
@@ -225,6 +247,7 @@ display: flex;
 align-items: center;
 flex-direction: column;
 }
+
 footer{
     background-color: var(--main-color);
     color: white;
