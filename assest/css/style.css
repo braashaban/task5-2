@@ -43,6 +43,11 @@ body{
 }
 
 
+.navbar .dropdown-menu img{
+    width: 200px;
+
+}
+
 
 .carousel{
     width: 100vw;
@@ -138,10 +143,22 @@ width: 190px;
     transition: 0.8s all;
 }
 
-.power .imgs{
+.power .imgess{
     max-width: 100%;
-
 }
+ .power .circles{
+    position: relative;
+}
+ .power .circles .dot {
+        position: absolute;
+        top: -80px;
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 
 
 .features .feat1{

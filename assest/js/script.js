@@ -28,7 +28,7 @@ function showw(data){
            </div>
       <div class="card-contents">
             <h3>${element.title}</h3>
-           <p>${element.desription}</p>
+           <p>${element.description}</p>
               <p>${element.price}</p>
     </div>
     </div> 
