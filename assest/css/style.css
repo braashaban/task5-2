@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none
+}
+
+:root {
+    --main-color: #eb0028;
+    --second-color: #8a8a8a;
+}
+
+.top {
+    background-color: #000000;
+    color: white;
+    padding: 8px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.remove {
+    display: none;
+}
+
+.top .close {
+    color: white;
+    background-color: none;
+}
+
+.top .close:hover {
+    color: var(--main-color);
+}
+
+/*  .slider .carousel-control-prev {
+    padding: 30px;
+}
+
+  .slider .carousel-control-next-icon,
+  .slider .carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: black;
+    border-radius: 50%;
+    padding: 25px;
+}
+.slider .carousel-control-next-icon:hover,
+.slider .carousel-control-prev-icon:hover {
+    background-color: var(--main-color);
+} */
+.carousel-caption{
+    top: 40px !important;
+    left: 20%;
+}
+.carousel-item .btn-slider{
+background-color: #000000;
+border: 1px solid #fff;
+color:#fff;
+padding:  15px 20px;
+font-size: 18px;
+border-radius:50px;
+width: 190px;
+}
+.carousel-item .btn-slider:hover{
+    background-color:#eb0028 !important;
+    color:#fff !important;
+    
+    }
+.carousel-item h5{
+    font-size: 6.25rem !important;
+}
+.carousel-item p{
+    font-size: 2.25rem !important;
+}
+.under-slider {
+    background-color: #8a8a8a38;
+}
+
+.under-slider .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.under-slider .content p {
+
+    font-weight: 700;
+}
+
+
+
+.under-slider .content img {
+    width: 60px;
+    height: 60px;
+}
+
+.performance .card {
+    border: none;
+    transition: 0.8s all ease-in-out;
+}
+
+.performance .p-card {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.performance p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.performance .card-img-top {
+    width: 120px;
+    margin: auto;
+    transition: 0.8s all;
+}
+
+
+
+.features .feat1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: 10px;
+  transition: 0.8s all ease-in-out;
+}
+.features .feat1 p{
+    color: var(--second-color);
+    transition: 0.8s all ease-in-out;
+}
+.features .feat1 h5:hover, .features .feat1 p:hover{
+    cursor: pointer;
+    color: #eb0028 !important;
+    font-weight: 600;
+}
+.features .feat1 img{
+    width: 100px;
+    height: 80px;
+    transition: 0.8s all  ease-in-out;
+}
+
+.features .feat1 img:hover,.performance .card-img-top:hover {
+    transform: scale(1.1);
+
+}
+
+.accordions {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+}
+    
+.accordion .accordion-item {
+    background-color: transparent !important;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+ 
+}
+    
+
+.accordion .accordion-header .accordion-button {
+    background-color: transparent !important;
+    color: white;
+   
+}  
+.showww {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: #8a8a8a;
+    margin-top: 200px;
+}
+.sec-arrives .slide-container{
+    max-width: 1120px;
+    width: 100%;
+   
+    padding: 13px;
+}
+.sec-arrives{
+    height: 1000px;
+}
+.cards{
+
+    border-radius: 20px;
+    background-color: #8a8a8a;
+    padding: 10px;
+}
+.cards img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card-contents{
+    display: flex;
+  
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 14px;
+}
+.sec-arrives .slide-cont{
+    margin:  0 40px;
+    overflow: hidden;
+}
+.sec-arrives .card{
+    border-radius: 10px;
+    background-color: #8a8a8a;
+    padding: 10px;
+}
+.sec-arrives .card-content,
+.imge-content{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+footer{
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100vw;
+}
