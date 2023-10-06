@@ -29,6 +29,21 @@ body{
     align-items: center;
 }
 
+.loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+background-color: #ffff;
+display: flex;
+justify-content: center; 
+align-items: center;
+z-index: 100000;
+}
+.loading img{
+    width: 200px;
+}
+
+
 .remove {
     display: none;
 }
@@ -48,6 +63,31 @@ body{
 
 }
 
+.navbar .dropdown-menu.show{
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar .dropdown-menu{
+    box-shadow: 0 3px 6pc rgba(0, 0, 0,0.32);
+    border: none;
+    padding: 0.3rem;
+}
+.navbar .dropdown-menu li:first-child a{
+   font-weight: bold;
+   font-size: 1.2rem;
+}
+.navbar .menu-flag img{
+width: 30px;
+}
+.navbar .menu-flag li{
+    font-size: 13px;
+    }
+
+    @media(max-width:900px){
+        .navbar #flagss{
+            display: none;
+        } 
+    }
 
 .carousel{
     width: 100vw;
@@ -89,6 +129,7 @@ width: 190px;
       color: #fff;
       border-radius: 50%;
       padding: 20px;
+      box-shadow: 3px 2px 10px #fff;
   }
   
   .carousel-control-next-icon:hover,
@@ -143,23 +184,67 @@ width: 190px;
     transition: 0.8s all;
 }
 
-.power .imgess{
-    max-width: 100%;
+.power{
+    margin-bottom: 150px !important;
 }
- .power .circles{
+.power .main{
     position: relative;
+
 }
- .power .circles .dot {
-        position: absolute;
-        top: -80px;
-  height: 25px;
-  width: 25px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
+.power .main .pointsss{
+
+    display: flex !important;
+    justify-content:space-around !important;
+    align-items: center !important;
+}
+.power .main .pointsss .line{
+    position: absolute;
+    width: 5px ;
+    background-color: #000;
+    height: 130px;
+  
+    top: 72%;
+    left: 15%;
+    border-radius: 5px;
+}
+
+.power .main .pointsss .line1{
+    position: absolute;
+    width: 5px ;
+    background-color: #000;
+    height: 100px;
+    top: 72%;
+    left: 40%;
+    border-radius: 5px;
+}
+
+.power .main .pointsss .line2{
+    position: absolute;
+    width: 5px ;
+    background-color: #000;
+    height: 110px;
+    border-radius: 5px;
+    top: 72%;
+    left: 65%;
+}
+
+.power .main .pointsss .line3{
+    position: absolute;
+    width: 5px ;
+    background-color: #000;
+    height: 130px;
+    top: 72%;
+    left: 91%;
+    border-radius: 5px;
 }
 
 
+.power .dot{
+   position: absolute;
+   top: 60%;
+   z-index: -10;
+
+}
 
 .features .feat1{
     display: flex;
@@ -225,44 +310,69 @@ width: 190px;
 .sec-arrives .slide-container{
     max-width: 1120px;
     width: 100%;
+    transition: 0.9s border;
    
-    padding: 13px;
 }
 .sec-arrives{
     height: 1000px;
 }
-.cards{
 
-    border-radius: 20px;
-    background-color: #8a8a8a;
-    padding: 10px;
-}
+
 .cards img{
-    height: 100%;
+    height: 250px;
     width: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 .card-contents{
-    display: flex;
-  
+    display: flex;      
     align-items: center;
     flex-direction: column;
     padding: 10px 14px;
+    background-color:#eee ;
+    border-radius: 15px;
 }
+
 .sec-arrives .slide-cont{
     margin:  0 40px;
     overflow: hidden;
 }
+
 .sec-arrives .card{
     border-radius: 10px;
-    background-color: #8a8a8a;
-    padding: 10px;
+    transition:.8s all ease-in-out;
+    transition-duration: .8s;
+    transition-delay: 0.3s;
+    border: 2px solid #eee;
 }
-.sec-arrives .card-content,
-.imge-content{
-display: flex;
-align-items: center;
-flex-direction: column;
+
+ .sec-arrives .cards:hover{
+    border-radius: 20px;
+border: 2px solid #eb0028;
+
+ }
+
+.sec-arrives .swiper-button-next,.sec-arrives .swiper-button-prev{
+    background-color: #000000;
+    font-size: 15px;
+    color: #fff;
+    padding: 25px;
+    border-radius: 50%;
+}
+
+.sec-arrives .swiper-button-next:hover,.swiper-button-prev:hover{
+    background-color: #eb0028;
+    color: #fff;
+}
+.sec-arrives .card-contents h3{
+    color: #eb0028;
+}
+.card-contents  .icons .icon{
+    color: #8a8a8a;
+}
+.card-contents .pricss{
+    color: #eb0028;
+    font-size: 22px;
 }
 
 footer{

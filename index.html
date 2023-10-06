@@ -19,11 +19,18 @@
   <title>Phone </title>
 </head>
 
-<body>
+<body onload="(loadd())">
+
+<div class="loading">
+  <img src="./assest/imgs/loading-gif.gif" alt="loading">
+</div>
 
   <div class="top">
-    <p class="text-center">Long Weekend Sale Up to 50% OFF <a href="./show.more.html"> Shop Now</a></p>
-    <button class="btn close" style="font-size: 20px;">x</button>
+    <div class="contsiner">
+      <p class="text-center">Long Weekend Sale Up to 50% OFF <a href="./show.more.html"> Shop Now</a></p>
+      <button class="btn close" style="font-size: 18px;">x</button>
+    </div>
+
   </div>
   <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
     <div class="container">
@@ -39,65 +46,43 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
             </a>
-            <ul class="dropdown-menu p-3" style="width:max-content" >
-              <div class="row d-flex flex-wrap">
-                <div class="col-2 ">
-                  <h5>SSD CARD</h5>
-                  <hr class="dropdown-divider">
-                  <ul>
-                    <li>Dropdown</li>
-                    <li>Dropdown</li>
-                    <li>Dropdown</li>
-                    <li>Dropdown</li>
-                    <li>Dropdown</li>
-                  </ul>
-                </div>
-                <div class="col-2">
-                  <h5>SSD CARD</h5>
-                  <hr class="dropdown-divider">
-                  <ul>
-                    <li>Dropdown</li>
-                    <li>Dropdown</li>
-                    <li>Dropdown</li>
-                    <li>Dropdown</li>
-                    <li>Dropdown</li>
-                  </ul>
-                </div>
-                <div class="col-2">
-                  <h5>SSD CARD</h5>
-                  <hr class="dropdown-divider">
-                  <ul>
-                    <li>Dropdown</li>
-                    <li>Dropdown</li>
-                    <li>Dropdown</li>
-                    <li>Dropdown</li>
-                    <li>Dropdown</li>
-                  </ul>
-                </div>
-                <div class="col-2">
-                  <h5>SSD CARD</h5>
-                  <hr class="dropdown-divider">
-                  <ul>
-                    <li>Dropdown</li>
-                    <li>Dropdown</li>
-                    <li>Dropdown</li>
-                    <li>Dropdown</li>
-                    <li>Dropdown</li>
-                  </ul>
-                </div>
-                <div class="col-1">
-                  <img src="./assest/imgs/p6.webp" alt="phone>
-                </div>
-
-              </div>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul>
+            
+              <li><a class="dropdown-item" href="#">Action</a></li>
               <hr class="dropdown-divider">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
 
             </ul>
+
+            <ul>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+              </ul>
+              <hr class="dropdown-divider">
+              <ul>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+              </ul>
+              <div>
+                <img src="./assest/imgs/p6.webp" alt="phone">
+              </div>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Shop</a>
@@ -188,27 +173,72 @@
             </div>
           </li>
 
-
+<!--  <div class="row d-flex flex-wrap">
+                <div class="col-lg-2 col-md-12">
+                  <h5>SSD CARD</h5>
+                  <hr class="dropdown-divider">
+                  <ul>
+                    <li>Dropdown</li>
+                    <li>Dropdown</li>
+                    <li>Dropdown</li>
+                    <li>Dropdown</li>
+                    <li>Dropdown</li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-12">
+                  <h5>SSD CARD</h5>
+                  <hr class="dropdown-divider">
+                  <ul>
+                    <li>Dropdown</li>
+                    <li>Dropdown</li>
+                    <li>Dropdown</li>
+                    <li>Dropdown</li>
+                    <li>Dropdown</li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-12">
+                  <h5>SSD CARD</h5>
+                  <hr class="dropdown-divider">
+                  <ul>
+                    <li>Dropdown</li>
+                    <li>Dropdown</li>
+                    <li>Dropdown</li>
+                    <li>Dropdown</li>
+                    <li>Dropdown</li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-12">
+                  <h5>SSD CARD</h5>
+                  <hr class="dropdown-divider">
+                  <ul>
+                    <li>Dropdown</li>
+                    <li>Dropdown</li>
+                    <li>Dropdown</li>
+                    <li>Dropdown</li>
+                    <li>Dropdown</li>
+                  </ul>
+                </div>
+                <div class="col-lg-1 col-md-12">
+                  <img src="./assest/imgs/p6.webp" alt="phone>
+                </div>
+              </div> -->
 
       </div>
       <div class="icons p-2">
         <i class="fa-solid fa-magnifying-glass"></i>
         <i class="fa-solid fa-user"></i>
         <button type="button" class="btn position-relative">
-        
           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
             9+
             <span class="visually-hidden">unread messages</span>
           </span>
-
-
         <i class="fa-solid fa-cart-plus"></i>
-
       </div>
       <div class="dropdown p-3">
         <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
         </button>
-        <ul class="dropdown-menu" id="flagss">
+
+        <ul class="dropdown-menu menu-flag d-sm-none" id="flagss">
         </ul>
       </div>
     </div>
@@ -264,7 +294,7 @@
   </div>
   </div>
 
-  <div class=" under-slider">
+  <div class="under-slider">
     <div class="row pt-3">
       <div class="col">
         <div class="content d-flex">
@@ -351,22 +381,52 @@
       </div>
       <div class="main">
         <div class="rows">
-          <div class="imgess">
-            <img src="./assest/imgs/hotspot_2934b3a5-cd7e-49be-b709-8269a17f7390.webp" style="width: fit-content;">
+          <div class="col">
+          <div class="imgess ">
+            <img src="./assest/imgs/hotspot_2934b3a5-cd7e-49be-b709-8269a17f7390.webp" class="img-fluid w-100">
           </div>
-          <div class="circles">
-            <span class="dot"></span>
-          </div>
-          <div class="circles">
-            <span class="dot"></span>
-          </div>
-          <div class="circles">
-            <span class="dot"></span>
-          </div>
-          <div class="circles">
-            <span class="dot"></span>
-          </div>
+          <div class="pointsss">
+            <div class="point">
+              <div class="spinner-grow text-black dot" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="line"></div>
+            </div>
+           
+            <div class="point">
+              <div class="spinner-grow text-black dot" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="line1"></div>
+              
+            </div>
+           <!--  <div class="delaties text-center">
+              <img src="./assest/imgs/ic7.webp" alt="">
+              <h5>SCORPION PROCESSOR</h5>
+              <p> Tristique senectus et netus et malesuada fames ac turpis.</p>
+            </div> -->
+            <div class="point">
+            <div class="spinner-grow text-black dot" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="line2">
+            </div>
+           </div>
+          
+            <div class="point">
+            <div class="spinner-grow text-black dot" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="line3">
+            </div>
+           </div>
+       
+
         </div>
+         
+
+        </div>
+      </div>
 
 
 
@@ -378,7 +438,7 @@
 
 
   <!-- new arrives -->
-  <section class="features">
+  <section class="features mt-5">
     <div class="container mt-5">
       <div class="head">
         <h2 class="text-center">INNOVATIVE QUALITIES & FEATURES</h2>
@@ -553,7 +613,6 @@
       <div class="slide-container swiper">
         <div class="slide-cont">
           <div class="card-wrapper swiper-wrapper" id="sliders">
-
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
