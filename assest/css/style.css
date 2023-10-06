@@ -21,12 +21,15 @@ body{
     overflow-x: hidden;
 }
 .top {
-    background-color: #000000;
-    color: white;
-    padding: 8px;
+    padding: 10px;
+    background-color: black;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     align-items: center;
+    gap: 20px;
+}
+.top{
+    color: #fff;
 }
 
 .loading{
@@ -57,16 +60,28 @@ z-index: 100000;
     color: var(--main-color);
 }
 
-
+ .navbar .nav-link{
+    color: #8a8a8a;
+ }
+ .navbar .nav-link:hover{
+    color: #eb0028;
+ }
 .navbar .dropdown-menu img{
     width: 200px;
-
 }
-
 .navbar .dropdown-menu.show{
     display: flex;
-    flex-wrap: wrap;
+  
 }
+@media(max-width:800px){
+    .navbar .dropdown-menu.show{
+        display: flex;
+        flex-wrap: wrap;
+      
+    } 
+} 
+
+
 .navbar .dropdown-menu{
     box-shadow: 0 3px 6pc rgba(0, 0, 0,0.32);
     border: none;
@@ -82,25 +97,26 @@ width: 30px;
 .navbar .menu-flag li{
     font-size: 13px;
     }
-
-    @media(max-width:900px){
-        .navbar #flagss{
-            display: none;
-        } 
-    }
-
+    
 .carousel{
     width: 100vw;
+    position: relative;
 }
 .carousel-caption{
-    top: 100px !important;
+    position: relative;
+    top: 10% !important;
     left: 15% !important;
     width: 100%;
 }
 .carousel-item .carousel-2{
-    top: 100px !important;
-    left: -18% !important;
-    width: 100% !important
+    top:10% !important;
+    left:-18% !important;
+    width:100% !important
+}
+@media(max-width:900px){
+    html{
+        font-size: 10px;
+    }
 }
 .carousel-item .imgs{
 width: 100%;
@@ -115,10 +131,10 @@ font-size: 18px;
 border-radius:50px;
 width: 190px;
 }
+
 .carousel-item .btn-slider:hover{
     background-color:#eb0028 !important;
     color:#fff !important;
-    
     }
 
    .carousel-control-next-icon,
@@ -203,8 +219,8 @@ width: 190px;
     background-color: #000;
     height: 130px;
   
-    top: 72%;
-    left: 15%;
+    top: 65%;
+    left: 13%;
     border-radius: 5px;
 }
 
@@ -213,8 +229,8 @@ width: 190px;
     width: 5px ;
     background-color: #000;
     height: 100px;
-    top: 72%;
-    left: 40%;
+    top: 65%;
+    left: 39%;
     border-radius: 5px;
 }
 
@@ -224,8 +240,8 @@ width: 190px;
     background-color: #000;
     height: 110px;
     border-radius: 5px;
-    top: 72%;
-    left: 65%;
+    top: 65%;
+    left: 63%;
 }
 
 .power .main .pointsss .line3{
@@ -233,17 +249,21 @@ width: 190px;
     width: 5px ;
     background-color: #000;
     height: 130px;
-    top: 72%;
-    left: 91%;
+    top: 65%;
+    left: 89%;
     border-radius: 5px;
 }
 
 
 .power .dot{
    position: absolute;
-   top: 60%;
-   z-index: -10;
+   top: 58%;
+   z-index: 4;
 
+}
+.power .delaties{
+    margin-top: 100px;
+    width: 150px;
 }
 
 .features .feat1{
